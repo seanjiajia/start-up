@@ -2,264 +2,37 @@
 <html>
 
 <head>
-    <script src="https://kit.fontawesome.com/037c8cb318.js" crossorigin="anonymous"></script>
-    <!fontawesome>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!rwd?>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-                integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-                crossorigin="anonymous">
-            <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Open+Sans:ital@1&display=swap"
-                rel="stylesheet">
-            <!google font的連結>
-                <link rel="stylesheet" href="css/style.css">
-                <!自己寫的css>
-                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                        crossorigin="anonymous"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                        crossorigin="anonymous"></script>
-                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-                        crossorigin="anonymous"></script>
-                    <scrip src="http://code.jquery.com/jquery-3.3.1.js"></scrip>
-                    <!jquery引用>
-                        <script type="text/javascript">
-                            $(document).ready(function () {
-                                $(function () {
-                                    $('#about').click(function () {
-                                        $('html,body').animate({ scrollTop: $('#second').offset().top }, 500);
-                                    });
-                                });
-                            }); 
-                        </script>
+  <title>Startup</title>
 
-                        <title>JIA's resume</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+  <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Your own stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+  <!-- bootstrap d-flex , h-100 means container height 100% -->
+  <div class="container d-flex align-items-center h-100">
+    <div class="row">
+      <header class="text-center col-12">
+        <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1>
+      </header>
+      <div class="buffer col-12"></div>
+      <section class="text-center col-12">
+        <hr>
+        <a href="https://mailchi.mp/017cae7923c1/startup">
+          <button class="btn btn-primary btn-xl">Find out more</button>
+        </a>
+      </section>
 
-    <header>
-        <!再用一個header包起來>
-            <div class='container'>
-                <!要把上面的menu一樣用在container裡面>
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <!上面的Menu>
-                            <a class="navbar-brand" href="#">
-                                JIAJIA
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">首頁</a>
-                                    </li>
-                                    <li class="nav-item" id="about">
-                                        <a class="nav-link">關於我</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link">Link</a>
-                                    </li>
-                                    <!-- <li class="nav-item">
-                                        <a class="nav-link" href="register.html">註冊</a>
-                                    </li> -->
-
-                                </ul>
-                                <!--
-                            <li class="nav-item active"> <!active是正常的>
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item dropdown"> <!dropdown會還有一個dropdown menu>
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                            </li>
-
-
-                            <li class="nav-item"> <!disabled 是不能按的意思>
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li>
-
-                            <!search的地方      >
-                            <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form>
-                        -->
-                            </div>
-                    </nav>
-            </div>
-    </header>
-
-    <section id='intro'>
-        <!大banner>
-            <div class='jumbotron'>
-                <!整個banner放在container外才可以>
-                    <!jumbotron算一種bootstrap>
-                        <div class='container'>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <!要切幾行這樣>
-                                        <h1>「嗨，大家今天過得好嗎?」</h1>
-                                        <!大標題>
-
-                                            <!小標題>
-                                                <!-- <a class='btn' href="#">連結</a>    <!連結> -->
-
-                                </div>
-                            </div>
-                        </div>
-            </div>
-
-    </section>
-
-    <section id='second'>
-        <div class='container'>
-            <div class="row">
-                <div class='col-md-8 offset-md-2 text-center'>
-                    <!text-center=text-align:center>
-                        <h3>關於我</h3>
-                        <div class="row">
-                            <div class='col-md-4'>
-                                <img src="pictures/Me2.png">
-                                <h5>平時的我</h5>
-                            </div>
-                            <div class='col-md-8 text-left'>
-                                <p class='lead'>「台南是一個適合人們作夢、幹活、戀愛、結婚、悠然過活的地方。」</p>
-                                <p>　　我是張成家，是道地的台南人，初聞文學耆者葉石濤先生此言時，最先想起的便是我的父母親。他們是傳統勤奮的做事人但且開明
-                                    有抱負、他們是率真隨興的台南人但且積極有原則，他們是我的楷模，於是我繼承了他們身上所有台南人親切敦厚的特質。
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                </div>
-            </div>
-
-
-        </div>
-
-
-
-    </section>
-
-    <section id='third'>
-        <div class='container'>
-            <div class="row">
-                <div class='col-md-12 text-center'>
-                    <h3>求學經歷</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class='col-md-6'>
-                    <div class='outer'>
-                        <div class='upper'>
-                            <img id="graduate" src='pictures/IMG_1765.JPG'>
-                            <div class='innertext'>
-                                <span>台南大學數位學習科技學系</span>
-                            </div>
-                        </div>
-                        <div class='lower'>
-                            <p>　大學畢業於國立台南大學數位學習科技學系，畢業專題主題為英語情境式互動學習App，擔任組長訂定完成進度，將工作分為前
-                                端、後端、美術，我主要負責前、後端。在團隊遇到問題時，嘗試各種方法，抑或向學長請教，最後解決問題，讓我體認到Trial
-                                and Error是最平凡也最能藉由實作中學習的方法，而良好的人際關係和分工合作，能促使團隊往前並凝聚向心力，在團隊中也展現
-                                我的軟實力和人際整合能力，順利完成畢業專題並得到分組第一的成績。在數位系學習到最多的就是富有創造力與樂觀積極的態
-                                度，除了本科系的課，另外修習外系的影像處理軟體及3D軟體操作等，由於修課的多元化，看待事物的觀點較廣，不會侷限在框架中。</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class='col-md-6'>
-                    <div class='outer'>
-                        <div class='upper'>
-                            <img src='pictures/Me.jpg'>
-                            <div class='innertext'>
-                                <span>政治大學資訊管理研究所</span>
-
-                            </div>
-                        </div>
-                        <div class='lower'>
-                            <p>　碩士在台北就讀國立政治大學資訊管理研究所，政大的每一堂課都很扎實，由於我是跨系考取的，為了能準時畢業，在碩士第一年
-                                便將大部分學分修完，其中包含先修科目如：會計、經濟等科目，二年級才能專心致力於論文的撰寫，而論文題目為網拍價格哄抬
-                                的偵測，分析網路拍賣上買家出價的行為，預測價格哄抬的機率。在台北的生活已滿兩年，學到最多的就屬兩件事，一是付諸行
-                                動，二是充實的時間管理，在時間的縫隙中塞滿自己想做的事情，訂定目標，並且達成，成為有競爭力的人。</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-    <!最後一個放email的>
-        <section id='email'>
-            <div class='container'>
-                <div class="row">
-                    <div class='col-md-8 offset-md-2 text-center'>
-                        <h3>聯絡資訊</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class='col-md-8 offset-md-2 text-left'>
-                        <p>通知我</p>
-                        <div class="input-group input-group-lg">
-                            <input type="text" class="form-control" aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-lg" placeholder="E-mail">
-                        </div>
-                        <a class='btn' href="#">提交</a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class='col-md-4 text-left'>
-                        <!--
-                            <img src='pictures/logo.jpg'>
-                        -->
-
-                    </div>
-                    <div class='col-md-4 text-left'>
-                        <h4>連結</h4>
-                        <ul>
-                            <li><a href="#">首頁</a></li>
-                            <li><a href="#">關於我</a></li>
-                            <li><a href="#">Link</a></li>
-                        </ul>
-
-                    </div>
-                    <div class='col-md-4 text-left'>
-                        <h4>聯絡我</h4>
-                        <i class="fas fa-mobile-alt"> 0926368390</i>
-                        <p>E-mail : <a href="mailto:st09061992@gmail.com">st09061992@gmail.com</p>
-                        <!mailto表示點下去會寫信ㄅ>
-                    </div>
-                </div>
-            </div>
-
-
-        </footer>
-
+    </div>
+  </div>
 
 </body>
-
 
 </html>
